@@ -1,6 +1,6 @@
 // Instruction to every other class
 // on how they can be an argument to 'addMarker'
-interface Location {
+export interface Location {
 	location: {
 		lat: number,
 		lng: number

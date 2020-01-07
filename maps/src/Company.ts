@@ -1,6 +1,7 @@
 import faker from 'faker';
+import { Location } from './CustomMap';
 
-export class Company {
+export class Company implements Location {
 	companyName: string;
 	catchPhrase: string;
 	location: {
