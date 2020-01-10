@@ -22,6 +22,8 @@ export class LinkedList implements Sortable {
 		while (tail.next) {
 			tail = tail.next;
 		}
+
+		tail.next = node;
   }
 
   get length(): number {
@@ -63,7 +65,7 @@ export class LinkedList implements Sortable {
 			throw new Error('List is empty');
 		}
 
-		return this.at(leftIndex) > this.at(rightIndex);
+		return this.at(leftIndex).data > this.at(rightIndex).data;
 	}
 
 	swap(leftIndex: number, rightIndex: number) {
