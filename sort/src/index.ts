@@ -5,15 +5,13 @@ import { LinkedList } from './LinkedList';
 
 // Sort array of numbers
 const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
-const sorter = new Sorter(numbersCollection);
-sorter.sort();
-console.log(sorter.collection);
+numbersCollection.sort();
+console.log(numbersCollection.data);
 
 // Sort characters of a string
 const charactersCollection  = new CharactersCollection('Xaayb');
-const sorter2 = new Sorter(charactersCollection);
-sorter2.sort();
-console.log(sorter2.collection);
+charactersCollection.sort();
+console.log(charactersCollection.data);
 
 
 // Sort linked list
@@ -23,6 +21,5 @@ linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(4);
 
-const sorter3 = new Sorter(linkedList);
-sorter3.sort();
+linkedList.sort();
 linkedList.print();
